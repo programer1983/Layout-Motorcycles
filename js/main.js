@@ -13,17 +13,6 @@ function open(){
 
 /* ======================================================================================= */
 
-
-navList.querySelectorAll(".header__menu-link").forEach(link => {
-  link.addEventListener("click", () => {
-    burgerButton.classList.remove("active")
-    navList.classList.remove("active-menu")
-    html.classList.remove("unscroll")
-  })
-})
-
-/* ======================================================================================= */
-
 const anchors = document.querySelectorAll('[href*="#"]');
 
 anchors.forEach(anchor => {
@@ -38,6 +27,13 @@ anchors.forEach(anchor => {
     })
 })
 
+/* ======================================================================================= */
+
+navList.querySelectorAll(".header__menu-linck").forEach(link => {
+  link.addEventListener("click", () => {
+    navList.classList.remove("active-menu")
+  })
+})
 
 /* ====================================================================================  */
 
