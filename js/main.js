@@ -31,7 +31,9 @@ anchors.forEach(anchor => {
 
 navList.querySelectorAll(".header__menu-linck").forEach(link => {
   link.addEventListener("click", () => {
+    burgerButton.classList.remove("active")
     navList.classList.remove("active-menu")
+    // html.classList.remove("unscroll")
   })
 })
 
