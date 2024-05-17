@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "./reset.css";
+@import "./header.css";
+@import "./services.css";
+@import "./about.css";
+@import "./feature.css";
+@import "./blog.css";
+@import "./instagram.css";
+@import "./footer.css";
+
+
+/* --primary-color: #161616;
+--text-dark: #000000;
+--text-light: #767268;
+--extra-light: #f3f4f6;
+--white: #ffffff;
+--max-width: 1200px;
+--header-font: "Oswald", sans-serif; */
+
+
+/* <div class="about__top">
+    <div class="about__decor">
+        <span></span>
+        <span></span>
+    </div>
+    <h2 class="about__title">About Us</h2>
+    <div class="about__decor">
+        <span></span>
+        <span></span>
+    </div>
+</div> */
+
+/* .about__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.about__decor {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.about__decor span{
+    width: 100px;
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.536);
+}
+.about__title {
+    color: var(--text-dark);
+    font-family: var(--header-font);
+    font-size: 35px;
+    margin: 0 20px;
+} */
+
+
+:root{
+   --maxWidth: 1220px;
+   --fontPoppins: "Poppins", sans-serif;
+   --white: #ffffff;
+   --header-font: "Oswald", sans-serif;
+   --text-dark: #000000;
+}
+
+
+html.unscroll{
+    overflow: hidden;
+}
+
+body{
+    font-family: var(--fontPoppins);
+    overflow-x: hidden;
+}
+.wrapper{
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+main{
+  flex-grow: 1;
+}
+.container{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding: 0 15px;
+}

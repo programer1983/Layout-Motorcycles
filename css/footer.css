@@ -1,0 +1,213 @@
+.footer {
+    background-color: rgb(19, 18, 18);
+    padding: 80px 0 70px 0;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.footer__form-title {
+    color: var(--white);
+    font-family: var(--header-font);
+    font-size: 30px;
+}
+.footer__form-subtitle {
+    color: gray;
+}
+.form__body {
+    border: 4px solid black;
+    border-radius: 5px;
+}
+.form__input {
+    background-color: black;
+    padding: 20px 10px;
+    width: 250px;
+    caret-color: var(--white);
+    color: gray;
+}
+.form__input::placeholder {
+    font-size: 16px;
+}
+.form__button {
+    background-color: rgb(32, 30, 30);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+    transition: all .3s ease ;
+    border-radius: 5px;
+    &:hover{
+        background-color: var(--white);
+        color: var(--text-dark);
+    }
+}
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__social-logo {
+    width: 225px;
+    height: 88px;
+    margin-bottom: 40px;
+}
+.footer__social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.ri-facebook-line {
+    font-size: 18px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 900;
+    transition: .3s ease;
+    &:hover{
+        background-color: gray;
+        color: var(--white);
+    }
+}
+.ri-twitter-fill {
+    font-size: 18px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 900;
+    transition: .3s ease;
+    &:hover{
+        background-color: gray;
+        color: var(--white);
+    }
+}
+.ri-instagram-line {
+    font-size: 18px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 900;
+    transition: .3s ease;
+    &:hover{
+        background-color: gray;
+        color: var(--white);
+    }
+}
+.ri-youtube-fill {
+    font-size: 18px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 900;
+    transition: .3s ease;
+    &:hover{
+        background-color: gray;
+        color: var(--white);
+    }
+}
+.footer__copy {
+    color: gray;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: gray;
+}
+.footer__info-title {
+    color: var(--white);
+    font-family: var(--header-font);
+    font-size: 30px;
+}
+.footer__info-details {
+    display: flex;
+    column-gap: 20px;
+}
+.footer__info-details span{
+    font-size: 15px;
+    max-width: 300px;
+    width: 100%;
+    line-height: 1.4;
+}
+.ri-map-pin-2-line {
+    font-size: 20px;
+}
+.ri-phone-fill {
+    font-size: 20px;
+}
+.ri-mail-line {
+    font-size: 20px;
+}
+.footer__linktop {
+    position: relative;
+    left: 45.5%;
+    bottom: 60px;
+    background-color: var(--white);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 90px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.ri-arrow-up-s-line {
+    font-size: 20px;
+    color: var(--text-dark);
+}
+.footer__linktop span{
+    font-size: 16px;
+    color: var(--text-dark);
+}
+
+@media (max-width: 1046px){
+    .footer {
+        padding-bottom: 100px;
+    }
+    .footer__form, .footer__social{
+        height: 250px;
+    }
+}
+@media (max-width: 707px){
+    .footer__inner {
+        row-gap: 20px;
+    }
+    .footer__form{
+        height: 180px;
+    }
+    .footer__form-title, .footer__form-subtitle{
+        text-align: center;
+    }
+    .footer__info-title{
+        text-align: center;
+    }
+    .footer__linktop {
+        left: 43%;
+        right: auto;
+    }
+}
+@media (max-width: 470px){
+    .footer__linktop {
+        left: 38%;
+    }
+}
+@media (max-width: 357px){
+    .form__input {
+        width: 150px;
+    }
+}
